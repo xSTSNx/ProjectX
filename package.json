@@ -1,0 +1,19 @@
+{
+  "name": "projectx",
+  "version": "1.0.0",
+  "description": "AWS - Abschlussprojekt Grruppe 9",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/xSTSNx/ProjectX.git"
+  },
+  "author": "SebKy & xSTSNx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xSTSNx/ProjectX/issues"
+  },
+  "homepage": "https://github.com/xSTSNx/ProjectX#readme"
+}
