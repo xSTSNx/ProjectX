@@ -1,1 +1,1 @@
-console.log('German Football League Champion 2023: Saarland Hurricanes !!!')
+console.log("Ich verändere den Consolelog")
