@@ -1,9 +1,11 @@
-const express = require('express');
+
+const express = require('express')
 const dotenv = require('dotenv').config();
-const port = process.env.PORT;
+const port = process.env.DEV_PORT;
 
 const app = express();
 
-app.use('/openai', require ('./routes/openaiRoutes'))
+app.use('/openai', require('./routes/openaiRoutes'))
 
-app.listen(port, () => console.log(`Example app is listining on port ${port}`));  //Tells the app to listen to Port XY//
+app.listen(port, () => console.log(`Mein Server läuft  auf Port ${port}`));
+
