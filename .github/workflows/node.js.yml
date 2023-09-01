@@ -45,10 +45,9 @@ jobs:
         
         # TARGET: ${{ secrets.REMOTE_TARGET }}
         SCRIPT_BEFORE: |
-          whoami
           ls
         SCRIPT_AFTER: |
-          whoami
-          ls -al
+          sudo chmod +x after_script.sh
+          bash after_script.sh
           echo $RSYNC_STDOUT
       
