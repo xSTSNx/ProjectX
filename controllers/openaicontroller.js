@@ -6,7 +6,7 @@ const openai = new OpenAI({
 });
 
 const generateImage = async (req, res) => { 
-   try {
+  /* try {
     const response = await openai.images.generate({
         prompt: "a white siamese cat with blue eyes and a red hat",
         n: 1,
@@ -31,7 +31,12 @@ const generateImage = async (req, res) => {
             error: "das Bild konnte nicht generriert werden!"
             
         })
-   }
+   }*/
+   console.log(req)
+   res.status(200).json({
+    erfolgreich: true,
+ })
+  console.log(res)
 }
 
 module.exports = {generateImage};
