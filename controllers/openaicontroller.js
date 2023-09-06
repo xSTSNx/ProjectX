@@ -1,17 +1,20 @@
 const OpenAI = require('openai');
+const dotenv = require('dotenv').config();
+
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
 });
 
 
 const generateImage = async (req, res) => { 
-   try {
+  /* try {
     const response = await openai.images.generate({
         prompt: "a white siamese cat with blue eyes and a red hat",
         n: 1,
         size: "512x512",
       });
-      image_url = response.data.data[0].url;
+      console.log(response)
+      image_url = response.data[0].url;
 
         res.status(200).json({
             erfolgreich: true,
@@ -29,7 +32,12 @@ const generateImage = async (req, res) => {
             error: "das Bild konnte nicht generriert werden!"
             
         })
-   }
+   }*/
+  // console.log(req)
+   res.status(200).json({
+    erfolgreich: true,
+ })
+  console.log(res)
 }
 
 module.exports = {generateImage};
