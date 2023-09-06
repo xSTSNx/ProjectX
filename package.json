@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "dev": "nodemon index",
-    "prod": "npx parcel frontend/index.html",
+    "backend": "nodemon index",
+    "frontend": "npx parcel frontend/index.html",
     "build": "parcel build"
   },
   "repository": {

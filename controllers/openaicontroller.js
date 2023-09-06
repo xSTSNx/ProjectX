@@ -32,7 +32,7 @@ const generateImage = async (req, res) => {
             
         })
    }*/
-   console.log(req)
+  // console.log(req)
    res.status(200).json({
     erfolgreich: true,
  })
