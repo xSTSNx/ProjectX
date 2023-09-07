@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,32 +48,32 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <img src="/frontend/images/ai-generated-8195630_1280.jpg"  class="bd-placeholder-img" width="100%" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <h1>Beispiel 1</h1>
+            <p class="opacity-75">Sonnenaufgang mit Steinen am Wasser im Herbst.</p>
+            
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <img src="/frontend/images/nature-3082832_1280.jpg"  class="bd-placeholder-img" width="100%" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            <h1>Beispiel 2</h1>
+            <p>Unwetter zwischen den Bergen am Wasser mit Blitz.</p>
+            
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <img src="/frontend/images/2017-03-08-17-19-19-1152x768.jpg"  class="bd-placeholder-img" width="100%" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
         <div class="container">
           <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            <h1>Beispiel 3</h1>
+            <p>Sonnenuntergang am See mit Pflanzen Schilf.</p>
+            
           </div>
         </div>
       </div>
@@ -89,9 +89,9 @@
   </div>
     <div class="container-fluid">
         <div class="px-4 pt-5 my-5 text-center border-bottom">
-            <h1 class="display-4 fw-bold text-body-emphasis">Centered screenshot</h1>
+            <h1 class="display-4 fw-bold text-body-emphasis">Abschlussprojekt Gruppe 9</h1>
             <div class="col-lg-6 mx-auto">
-              <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+              <p class="lead mb-4">Herzlich Willkommen beim Abschlussprojekt der Gruppe 9. Hier könnt ihr eure Wunschbilder mit Hilfe einer AI generieren und speichern lassen. Viel Spaß dabei! </p>
               <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
               </div>
             </div>
@@ -104,22 +104,30 @@
               <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Vertically centered hero sign-up form</h1>
               <div class="overflow-hidden" style="max-height: 50vh;">
                 <div class="container px-5">
-                  <img src="https://placehold.co/256x256" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+                  <img src="https://placehold.co/256x256" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="512" height="512" loading="lazy">
                 </div>
               </div>
             </div>
             <div class="col-md-10 mx-auto col-lg-5">
               <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
                 <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">Enter your Text here</label>
+                  <input type="text" class="form-control" id="floatingInput" placeholder="message">
+                  <label for="floatingInput">Schreib deinen Text hier rein</label>
                 </div>
                 <div class="form-floating mb-3">
                   <label for="floatingPassword"></label>
                 </div>
+                <select class="form-select" aria-label=“Wähle eine Größe”>
+                  <option selected>Wähle eine Größe</option>
+                  <option value=“small”>256x256</option>
+                  <option value=“medium”>512x512</option>
+                  <option value=“large”>1024x1024</option>
+                </select>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                </div>
                 <button class="w-100 btn btn-lg btn-primary" type="submit">Send</button>
                 <hr class="my-4">
-                <small class="text-body-secondary">By clicking Send, you'll start an API Call to OPenAI</small>
+                <small class="text-body-secondary">Mit Klick auf Senden,startest du einen API-call zur OpenAI.</small>
               </form>
             </div>
           </div>

@@ -1,7 +1,7 @@
 /*
  * Custom CSS
  */
- html{
+html{
     margin: 0;
 }
 body {
@@ -74,11 +74,12 @@ body {
 
 
   .nav-scroller {
-    position: relative;
+    position: sticky;
     z-index: 2;
     height: 2.75rem;
     overflow-y: hidden;
   }
+
 
   .nav-scroller .nav {
     display: flex;
