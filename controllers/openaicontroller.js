@@ -5,6 +5,7 @@ const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
 });
 
+
 const generateImage = async (req, res) => { 
   /* try {
     const response = await openai.images.generate({

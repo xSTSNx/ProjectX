@@ -1,5 +1,8 @@
 node_modules
+<<<<<<< HEAD
 package-lock.json
+=======
+>>>>>>> main
 .env
 .parcel-cache
 dist
