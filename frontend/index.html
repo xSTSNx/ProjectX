@@ -1,79 +1,90 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-          </div>
-        </div>
-    </nav>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="/frontend/images/ai-generated-8195630_1280.jpg"  class="bd-placeholder-img" width="100%" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+        <img src="/frontend/images/ai-generated-8195630_1280.jpg" class="bd-placeholder-img" width="100%" height="100%"
+          aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
         <div class="container">
           <div class="carousel-caption text-start">
             <h1>Beispiel 1</h1>
             <p class="opacity-75">Sonnenaufgang mit Steinen am Wasser im Herbst.</p>
-            
+
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="/frontend/images/nature-3082832_1280.jpg"  class="bd-placeholder-img" width="100%" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+        <img src="/frontend/images/nature-3082832_1280.jpg" class="bd-placeholder-img" width="100%" height="100%"
+          aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
         <div class="container">
           <div class="carousel-caption">
             <h1>Beispiel 2</h1>
             <p>Unwetter zwischen den Bergen am Wasser mit Blitz.</p>
-            
+
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="/frontend/images/2017-03-08-17-19-19-1152x768.jpg"  class="bd-placeholder-img" width="100%" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+        <img src="/frontend/images/2017-03-08-17-19-19-1152x768.jpg" class="bd-placeholder-img" width="100%"
+          height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
         <div class="container">
           <div class="carousel-caption text-end">
             <h1>Beispiel 3</h1>
             <p>Sonnenuntergang am See mit Pflanzen Schilf.</p>
-            
+
           </div>
         </div>
       </div>
@@ -87,52 +98,67 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-    <div class="container-fluid">
-        <div class="px-4 pt-5 my-5 text-center border-bottom">
-            <h1 class="display-4 fw-bold text-body-emphasis">Abschlussprojekt Gruppe 9</h1>
-            <div class="col-lg-6 mx-auto">
-              <p class="lead mb-4">Herzlich Willkommen beim Abschlussprojekt der Gruppe 9. Hier könnt ihr eure Wunschbilder mit Hilfe einer AI generieren und speichern lassen. Viel Spaß dabei! </p>
-              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-              </div>
-            </div>
-          </div>
+  <div class="container-fluid">
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <h1 class="display-4 fw-bold text-body-emphasis">Abschlussprojekt Gruppe 9</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Herzlich Willkommen beim Abschlussprojekt der Gruppe 9. Hier könnt ihr eure Wunschbilder
+          mit Hilfe einer AI generieren und speichern lassen. Viel Spaß dabei! </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        </div>
+      </div>
     </div>
-    <div class="container-fluid">
-        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-          <div class="row align-items-center g-lg-5 py-5">
-            <div class="col-lg-7 text-center text-lg-start">
-              <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Vertically centered hero sign-up form</h1>
-              <div class="overflow-hidden" style="max-height: 50vh;">
-                <div class="container px-5">
-                  <img src="https://placehold.co/256x256" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="512" height="512" loading="lazy">
-                </div>
-              </div>
-            </div>
-            <div class="col-md-10 mx-auto col-lg-5">
-              <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="message">
-                  <label for="floatingInput">Schreib deinen Text hier rein</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <label for="floatingPassword"></label>
-                </div>
-                <select class="form-select" aria-label=“Wähle eine Größe”>
-                  <option selected>Wähle eine Größe</option>
-                  <option value=“small”>256x256</option>
-                  <option value=“medium”>512x512</option>
-                  <option value=“large”>1024x1024</option>
-                </select>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                </div>
-                <button class="w-100 btn btn-lg btn-primary" type="submit">Send</button>
-                <hr class="my-4">
-                <small class="text-body-secondary">Mit Klick auf Senden,startest du einen API-call zur OpenAI.</small>
-              </form>
+  </div>
+  <div class="container-fluid">
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3" id="msg"></h1>
+          <div class="overflow-hidden" style="max-height: 50vh;">
+            <div class="container px-5">
+              <img src="https://placehold.co/256x256" class="img-fluid border rounded-3 shadow-lg mb-4"
+                alt="Example image" width="512" height="512" loading="lazy">
             </div>
           </div>
         </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" id="image-form">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="message" placeholder="message">
+              <label for="floatingInput">Schreib deinen Text hier rein</label>
+            </div>
+            <select class="form-select" aria-label=“Wähle eine Größe” id="size">
+              <option selected>Wähle eine Größe</option>
+              <option value=“small”>256x256</option>
+              <option value=“medium”>512x512</option>
+              <option value=“large”>1024x1024</option>
+            </select>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Senden</button>
+            <hr class="my-4">
+            <small class="text-body-secondary">Mit Klick auf Senden,startest du einen API-call zur OpenAI.</small>
+          </form>
+        </div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  </body>
+  </div>
+  <div class="spinner" id="spinner">
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div>Loading...</div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
