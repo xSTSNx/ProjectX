@@ -11,12 +11,12 @@ function onSubmit(event) {
     }
 
     generateImageRequest(message, size)
+
 }
 
 async function generateImageRequest(message, size) {
+    showSpinner();
     try {
-        //showSpinner();
-
         const response = await fetch('http://localhost:5001/openai/generateimg', {
             method: 'POST',
             headers: {
@@ -30,25 +30,25 @@ async function generateImageRequest(message, size) {
         });
 
         if (!response.ok) {
-            //  removeSpinner();
+            removeSpinner();
             throw new Error('Das Bild konnte nicht generiert werden. Versuche es noch einmal..')
         }
         const data = await response.json();
         const image_url = data.data;
         document.getElementById("image").src = image_url;
         console.log(data)
-        // removeSpinner();
+        removeSpinner();
     } catch (error) {
         document.getElementById('msg').textContent = error;
     }
 }
 
-/* function showSpinner() {
-    document.getElementById('spinner').classList.add('show');
+function showSpinner() {
+    document.querySelector('.spinner').classList.add('show');
 }
 
 function removeSpinner() {
-    document.getElementById('spinner').classList.remove('show'); 
-} */
+    document.querySelector('.spinner').classList.remove('show'); 
+} 
 
 document.getElementById('image-form').addEventListener('submit', onSubmit)
