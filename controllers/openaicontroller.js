@@ -7,11 +7,11 @@ const openai = new OpenAI({
 
 
 const generateImage = async (req, res) => {
-  const {prompt, size} = req.body; 
+  const {message, size} = req.body; 
   const imageSize = size === "small" ? "256x256" : size === "medium" ? "512x512" : "1024x1024";   //tertiärer operation
   try {
     const response = await openai.images.generate({
-      prompt: "a white siamese cat with blue eyes and a red hat",
+      prompt: message,
       n: 1,
       size: imageSize,
     });
