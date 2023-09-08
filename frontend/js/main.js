@@ -17,7 +17,7 @@ async function generateImageRequest(message, size) {
     try {
         //showSpinner();
 
-        const response = await fetch('/openai/generateimg', {
+        const response = await fetch('http://localhost:5001/openai/generateimg', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -30,14 +30,14 @@ async function generateImageRequest(message, size) {
         });
 
         if (!response.ok) {
-          //  removeSpinner();
+            //  removeSpinner();
             throw new Error('Das Bild konnte nicht generiert werden. Versuche es noch einmal..')
         }
         const data = await response.json();
-        const image_url = data[0].url
+        const image_url = data.data;
         document.getElementById("image").src = image_url;
         console.log(data)
-       // removeSpinner();
+        // removeSpinner();
     } catch (error) {
         document.getElementById('msg').textContent = error;
     }
