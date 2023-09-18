@@ -1,15 +1,8 @@
 #! /bin/bash
 
 sudo su
-sudo apt update -y
-sudo apt upgrade -y 
-sudo apt install nodejs -y
-sudo apt install npm -y
-sudo apt install nginx -y
-sudo systemctl start nginx
-sudo systemctl enable nginx
-sudo mv /home/ubuntu/index.html /var/www/html
-sudo chown www-data:www-data /var/www/html
-sudo chown www-data:www-data /var/www/html/index.html
+sudo mv /home/ubuntu/ProjectX/ProtectX/frontend /var/www/html/frontend
+sudo chown www-data:www-data /var/www/html/frontend
+sudo chown www-data:www-data /var/www/html/frontend/index.html
 sudo rm -r /home/ubuntu/index.html
 touch FERTIG
