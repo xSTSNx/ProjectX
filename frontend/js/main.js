@@ -17,7 +17,7 @@ function onSubmit(event) {
 async function generateImageRequest(message, size) {
     showSpinner();
     try {
-        const response = await fetch('http://localhost:5001/openai/generateimg', {
+        const response = await fetch('https://project-x.rungame.de/openai/generateimg', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
