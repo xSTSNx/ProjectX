@@ -1,9 +1,22 @@
 const OpenAI = require('openai');
 const dotenv = require('dotenv').config();
+const axios = require('axios');
+const fs = require('fs');
+
+async function downloadImage(url, filename) {
+  const response = await axios.get(url, { responseType: 'arraybuffer' });
+
+  fs.writeFile(filename, response.data, (err) => {
+    if (err) throw err;
+    console.log('Image downloaded successfully!');
+  });
+}
+
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
+
 
 
 const generateImage = async (req, res) => {
@@ -19,11 +32,14 @@ const generateImage = async (req, res) => {
     });
     //console.log(response)
     image_url = response.data[0].url;
-
+    str = message.replace(/\s+/g, '');
+    downloadImage(image_url, `./frontend/images/${str}`);
 
 
     res.status(200).json({
       erfolgreich: true,
+      id,
+      name : message,
       data: image_url
     })
   } catch (error) {
@@ -38,6 +54,7 @@ const generateImage = async (req, res) => {
       error: "das Bild konnte nicht generriert werden!"
 
     })
+    const image_gallery ={res}
   }
   //console.log(res)
 }
