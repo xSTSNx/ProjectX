@@ -43,6 +43,19 @@ async function generateImageRequest(message, size) {
     }
 }
 
+function renderCard(data){
+   return `<div class="card" style="width: 18rem;">
+   <img src="'./frontend/images/${message}.jpg'" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h5 class="card-title">${message}</h5>
+   </div>
+ </div>` ;
+}
+
+function displayImages(data){
+    
+}
+
 function showSpinner() {
     document.querySelector('.spinner').classList.add('show');
 }
