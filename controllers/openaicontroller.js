@@ -33,12 +33,12 @@ const generateImage = async (req, res) => {
     //console.log(response)
     image_url = response.data[0].url;
     str = message.replace(/\s+/g, '');
-    downloadImage(image_url, `./frontend/images/${str}`);
+    downloadImage(image_url, `./frontend/images/${str}.jpg`);
 
 
     res.status(200).json({
       erfolgreich: true,
-      id,
+      
       name : message,
       data: image_url
     })
