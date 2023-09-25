@@ -33,6 +33,9 @@ async function generateImageRequest(message, size) {
             removeSpinner();
             throw new Error('Das Bild konnte nicht generiert werden. Versuche es noch einmal..')
         }
+        const data = await response.json();
+        const image_url = data.data;
+        document.getElementById("image").src = image_url;
         console.log(data)
         removeSpinner();
     } catch (error) {
