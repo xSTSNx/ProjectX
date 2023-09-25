@@ -17,7 +17,7 @@ function onSubmit(event) {
 async function generateImageRequest(message, size) {
     showSpinner();
     try {
-        const response = await fetch('http://localhost:5001/openai/generateimg', {
+        const response = await fetch('https://project-x.rungame.de:5000/openai/generateimg', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -43,19 +43,6 @@ async function generateImageRequest(message, size) {
     }
 }
 
-function renderCard(data){
-   return `<div class="card" style="width: 18rem;">
-   <img src="'./frontend/images/${message}.jpg'" class="card-img-top" alt="...">
-   <div class="card-body">
-     <h5 class="card-title">${message}</h5>
-   </div>
- </div>` ;
-}
-
-function displayImages(data){
-    
-}
-
 function showSpinner() {
     document.querySelector('.spinner').classList.add('show');
 }
@@ -64,4 +51,27 @@ function removeSpinner() {
     document.querySelector('.spinner').classList.remove('show'); 
 } 
 
+function renderCard(imageName){
+    return `
+        <div class="col text-center text-lg-start">
+          <div class="card" style="width: 15rem;">
+            <img src="./images/download/${imageName}.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Elefant mit blauen Augen.</p>
+            </div>
+          </div>
+        </div>`;
+}
+
+function renderAllCards(){
+    const output = "";
+    const json = ""; //TODO
+    for(imageName in json){
+        output += renderCard(imageName);
+    }
+    return output;
+}
+
 document.getElementById('image-form').addEventListener('submit', onSubmit)
+
+document.getElementById('gallery').innerHTML += renderAllCards()
