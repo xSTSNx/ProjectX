@@ -63,7 +63,6 @@ const generateImage = async (req, res) => {
       error: "das Bild konnte nicht generriert werden!"
 
     })
-    const image_gallery ={res}
   }
   //console.log(res)
 }
