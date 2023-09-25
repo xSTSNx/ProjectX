@@ -20,7 +20,7 @@ const openai = new OpenAI({
 
 async function saveToJson(str){
   imageNames.push(str);
-  fs.writeFile('../frontend/json/imageNames.json', JSON.stringify(imageNames), err => {
+  fs.writeFile('./frontend/json/imageNames.json', JSON.stringify(imageNames), err => {
     if (err) {
       console.error(err);
     }
