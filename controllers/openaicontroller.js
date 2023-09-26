@@ -42,8 +42,8 @@ const generateImage = async (req, res) => {
     //console.log(response)
     image_url = response.data[0].url;
     str = message.replace(/\s+/g, '');
-    downloadImage(image_url, `./frontend/images/download/${str}.jpg`);
-    saveToJson(str);
+  await  downloadImage(image_url, `./frontend/images/download/${str}.jpg`);
+  await  saveToJson(str);
 
     res.status(200).json({
       erfolgreich: true,

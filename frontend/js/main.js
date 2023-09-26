@@ -17,7 +17,7 @@ function onSubmit(event) {
 async function generateImageRequest(message, size) {
     showSpinner();
     try {
-        const response = await fetch('https://project-x.rungame.de/openai/generateimg', {
+        const response = await fetch('http://localhost:5000/openai/generateimg', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -65,7 +65,7 @@ function renderCard(imageName){
 
 function renderAllCards(){
     const output = "";
-    const json = ""; //TODO
+    const json = "";
     for(imageName in json){
         output += renderCard(imageName);
     }
@@ -74,4 +74,5 @@ function renderAllCards(){
 
 document.getElementById('image-form').addEventListener('submit', onSubmit)
 
-document.getElementById('gallery').innerHTML += renderAllCards()
+// document.getElementById('gallery').innerHTML = renderAllCards();
+
